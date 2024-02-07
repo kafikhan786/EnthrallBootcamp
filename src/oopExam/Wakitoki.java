@@ -1,5 +1,7 @@
 package oopExam;
 
 public interface Wakitoki {
-	//create a method
+	public static void wakitokiMethod() {
+		System.out.println("static method from Wakitoki interface");
+	}
 }

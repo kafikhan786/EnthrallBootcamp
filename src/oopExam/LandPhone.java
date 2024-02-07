@@ -1,5 +1,7 @@
 package oopExam;
 
 public class LandPhone {
-	//create a method
+	public void landPhoneMethod() {
+		System.out.println("Method from LandPhone class");
+	}
 }

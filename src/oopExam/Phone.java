@@ -1,27 +1,44 @@
 package oopExam;
 
+/*Features of interface
+ -interface is a reference type
+ -can contain method signature, default and static method
+ -can use extends keywords to inherit more than one interface
+ -can not inherit regular or abstract class
+ -can not use implement keyword
+ -can not have method void or return method body 
+ */
 /*
- Points: 70
-
-1) What are the features of Interface you know? use multiple line comments here to describe it. you can use newline (\n) and tab(\t)
- 
-2) if Phone interface, inherit other Interface -- Pager and Wakitoki, use appropriate keywords to inherit them in line 11. if Phone interface can inherit regular class - LandPhone and one abstract class SatelitePhone, use appropriate keywords to inherit them. if not, then ignore it
+ -Extends Pager and Wakitoki interface to Phone interface
+ -can not inherit regular class or abstract class to interface
  */
 
-public interface Phone {
+public interface Phone extends Pager, Wakitoki {
 
-/*
- 3) Create a variable and a constructor if possible, if not possible to create variable and constructor, use multiple line comments with explanation
- */
-	
-	
-/*
-4) Create four abstract method interfaceInfo (created below), call, message and camera 
-*/
-	public void interfaceInfo();
-	
-/*
-5) Create 2 non-abstract method - battery and wireless which are implemented inside this interface. Inside sysout print example-- "battery is a --- method from Java --?--" and complete the wireless one
- */
+	public int age = 10;
+
+	/*
+	 * Interface can not have Constructor
+	 */
+
+	public abstract void interfaceInfo();
+
+	public abstract void call();
+
+	public abstract void message();
+
+	public abstract void camera();
+
+	public default void b() {
+
+	}
+
+	public static void battery() {
+		System.out.println("Battery is a static void method from Java Interface");
+	}
+
+	public default void wireless() {
+		System.out.println("Wireless is a default void method from Java Interface");
+	}
 
 }

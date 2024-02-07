@@ -1,5 +1,7 @@
 package oopExam;
 
 public interface Watch {
-	// create a method
+	public static void methodFromWatch() {
+		System.out.println("static method from Watch interafce");
+	}
 }
