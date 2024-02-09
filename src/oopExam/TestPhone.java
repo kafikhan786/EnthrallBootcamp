@@ -5,11 +5,11 @@ public class TestPhone {
 	public static void main(String[] args) {
 
 		Iphone1 iphone1 = new Iphone1();
-
+		
 		iphone1.setInfo("Iphone 1");
 		iphone1.setPrice(750);
 		iphone1.setUser('M');
-		iphone1.setMadeInUSA(true);
+		iphone1.setMadeInUSA(false);
 
 		System.out.println("I bought this " + iphone1.getInfo() + " in 2000" + "\nThe price was: $" + iphone1.getPrice()
 				+ "\nUser's Sex: " + iphone1.getUser() + "\nIs the phone made in USA? " + iphone1.isMadeInUSA());
